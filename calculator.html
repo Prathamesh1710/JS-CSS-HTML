@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <title>Calculator</title>
+        <style type="text/css">
+            body {margin: 30px;}
+        </style>
+    </head>
+    <body>
+        <form>
+            first_number : <input type="text" id = "first_number" /><br>
+            second_number : <input type="text" id = "second_number" /><br>
+            <input type = "button" onClick="multiply()" Value = "Multiply" />
+            <input type = "button" onClick="divide()" Value = "Divide" />
+        </form>
+        <p>result : 
+        <span id="result"></span>
+        </p>
+        <script >
+            function multiply()
+            {
+                f_num = document.getElementById("first_number").value;
+                s_num = document.getElementById("second_number").value;
+                document.getElementById("result").innerHTML = f_num*s_num;
+            }
+            function divide()
+            {
+                f_num = document.getElementById("first_number").value;
+                s_num = document.getElementById("second_number").value;
+                document.getElementById("result").innerHTML = f_num/s_num;
+            }
+        </script>
+    </body>
+</html>
